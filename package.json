@@ -9,13 +9,21 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@lucide/vue": "^1.0.0-rc.0",
+    "@tailwindcss/vite": "^4.2.2",
+    "@vee-validate/zod": "^4.15.1",
+    "tailwindcss": "^4.2.2",
+    "vee-validate": "^4.15.1",
     "vue": "^3.5.30",
-    "vue-router": "4"
+    "vue-router": "4",
+    "zod": "^4.3.6"
   },
   "devDependencies": {
     "@types/node": "^24.12.0",
     "@vitejs/plugin-vue": "^6.0.5",
     "@vue/tsconfig": "^0.9.0",
+    "prettier": "^3.8.1",
+    "prettier-plugin-tailwindcss": "^0.7.2",
     "typescript": "~5.9.3",
     "vite": "^8.0.1",
     "vue-tsc": "^3.2.5"
