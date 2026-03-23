@@ -3,5 +3,6 @@ export const ROUTES = {
 	catalog: '/catalog',
 	cart: '/cart',
 	favorites: '/favorites',
-	orders: '/orders'
+	orders: '/orders',
+	profile: '/profile'
 }

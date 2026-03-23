@@ -6,7 +6,7 @@ import { Header } from '../Header'
 <template>
 	<div class="flex h-full flex-col">
 		<Header />
-		<main class="flex-1">
+		<main class="my-8 flex-1">
 			<RouterView />
 		</main>
 		<Footer />

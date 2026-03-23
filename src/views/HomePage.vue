@@ -1,9 +1,7 @@
+<script setup lang="ts">
+import Home from '@/components/features/Home/Home.vue'
+</script>
+
 <template>
-  <section>
-    <h2>Главная страница</h2>
-    <p>
-      Здесь обычно показывают приветственный экран, акции или быстрые ссылки на
-      разделы приложения.
-    </p>
-  </section>
+	<Home />
 </template>
