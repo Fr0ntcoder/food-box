@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { computed } from 'vue'
 
-type Variants = 'primary' | 'secondary' | 'ghost' | 'danger'
+type Variants = 'primary' | 'secondary' | 'ghost' | 'outline'
 type Sizes = 'sm' | 'md' | 'lg'
 type Types = 'button' | 'submit' | 'reset'
 
@@ -22,7 +22,7 @@ const classes = computed(() => {
 		primary: 'bg-primary text-primary-foreground hover:bg-primary/80',
 		secondary: 'bg-secondary text-secondary-foreground hover:bg-secondary/80',
 		ghost: 'bg-transparent text-black',
-		danger: 'bg-red-500 text-white hover:bg-red-600'
+		outline: 'border border-primary text-primary'
 	}
 
 	const sizeClasses = {
@@ -35,11 +35,7 @@ const classes = computed(() => {
 })
 </script>
 <template>
-	<button
-		:type="props.type"
-		:size="props.size"
-		:class="classes"
-	>
+	<button :type="props.type" :size="props.size" :class="classes">
 		<slot />
 	</button>
 </template>
