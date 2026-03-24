@@ -1,21 +1,23 @@
 <script lang="ts" setup>
 import { Button } from '@/components/ui'
 import { HeartIcon } from '@lucide/vue'
-const props = withDefaults(defineProps<{ modelValue?: boolean }>(), {
-	modelValue: false
-})
-const emit = defineEmits<{ (e: 'update:modelValue', value: boolean): void }>()
 
-const toogleFavorite = () => {
-	emit('update:modelValue', !props.modelValue)
+const props = withDefaults(defineProps<{ favorite?: boolean }>(), {
+	favorite: false
+})
+
+const emit = defineEmits<{ (e: 'update:favorite', value: boolean): void }>()
+
+const toggleFavorite = () => {
+	emit('update:favorite', !props.favorite)
 }
 </script>
 <template>
-	<Button variant="ghost" @click="toogleFavorite">
+	<Button variant="ghost" @click="toggleFavorite">
 		<HeartIcon
 			class="h-6 w-6"
 			:class="
-				props.modelValue
+				props.favorite
 					? 'fill-red-500 text-red-500'
 					: 'fill-transparent text-gray-500'
 			"
